@@ -1,0 +1,5 @@
+
+
+while true;  do nvidia-smi --query-gpu=utilization.gpu,utilization.memory --format=csv >> gpu_utilization.log; sleep 0.1; done
+
+while true;  do nvidia-smi --query-gpu=timestamp,utilization.gpu,utilization.memory --format=csv >> gpu_utilization.log; sleep 0.1; done
